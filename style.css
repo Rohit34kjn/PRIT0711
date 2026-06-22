@@ -99,12 +99,16 @@ body {
     height: 100%;
     background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('./hero.jpg');
     background-size: cover;
-    background-position: center 45%;
+    background-position: center top%;
     background-attachment: fixed;
     z-index: -1; 
     transform: scale(1.1);
 }
-
+@media(max-width: 768px){
+    .hero::before{
+        background-attachment: scroll;
+    }
+}
 
 
 
